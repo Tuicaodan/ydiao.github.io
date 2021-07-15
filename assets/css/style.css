@@ -438,6 +438,10 @@ section {
   color: #926FA1;
 }
 
+.description-block p {
+  text-align: justify;
+}
+
 
 /*--------------------------------------------------------------
 # Facts
