@@ -87,8 +87,9 @@
           <span>public class</span> AboutMe {
   	
             <span>static</span> Person <span class="IJ-pr">i</span> = <span>new</span> Person(<span class="IJ-gr">"Yiwei"</span>)
-            <span>static</span> List<Skill> <span class="IJ-pr">currentSkills</span> = Arrays.asList(Java<span>,</span> HTML<span>,</span> CSS<span>,</span> JavaScript<span>,</span> Node.js<span>,</span> 
-            SQL<span>,</span> MongoDB<span>,</span> REST APIs<span>,</span> Python<span>,</span> Git<span>,</span> Docker<span>,</span> Azure)<span>;</span>
+            <span>static</span> List<Skill> <span class="IJ-pr">currentSkills</span> = Arrays.asList(Java<span>,</span> HTML<span>,</span> CSS<span>,</span> JavaScript<span>,</span> Node.js<span>              
+             </span> React.js<span>,</span> styled-components<span>,</span> Tailwind CSS<span>,</span> GraphQL<span>,</span> DataLoader<span>,</span> Apollo Client<span>,</span>
+              SQL<span>,</span> MongoDB<span>,</span> REST APIs<span>,</span> Python<span>,</span> Git<span>,</span> Docker<span>,</span> Azure)<span>;</span>
             
             <span>public static void</span> main(String args[]) {
               JobThread currentThread1 = <span>new</span> JobThread()<span>;</span>
@@ -135,8 +136,11 @@
 
         <div class="section-title description-block">
           <h2>Projects</h2>
-          <p>Here are the projects I have done. Most of the projects are full-stack projects. Alongside my progress in learning new skills, I always apply the new skills in the new projects.
-            Now I'm working on two ongoing projects. One of the projects is to use React and MongoDB to write a job searching database. Another project is using Java and Java Swing to write the classic bulls and cows guessing game. Please check back later for the upcoming project.</p>
+          <p>Here are the projects I have done. Most of the projects are full-stack projects. Alongside my progress in
+            learning new skills, I always apply the new skills in the new projects.
+            Now I'm working on two ongoing projects. One of the projects is to use React and MongoDB to write a job
+            searching database. Another project is using Java and Java Swing to write the classic bulls and cows
+            guessing game. Please check back later for the upcoming project.</p>
         </div>
 
         <div class="row">
@@ -206,6 +210,35 @@
               </div>
             </div>
           </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/youtagram-server/logo-server.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Youtagram: server</h4>
+                <p>A GraphQL API Endpoint for the Youtagram app</p>
+                <div class="portfolio-links">
+                  <a href="portfolio-youtagram-api.html" class="portfolio-details-lightbox"
+                    data-glightbox="type: external" title="App Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/youtagram-client/logo-client.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Youtagram</h4>
+                <p>A YouTube version of Instagram</p>
+                <div class="portfolio-links">
+                  <a href="portfolio-youtagram.html" class="portfolio-details-lightbox" data-glightbox="type: external"
+                    title="App Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
 
         </div>
 
@@ -301,8 +334,8 @@
             <div class="resume-item">
               <h4>Postgraduate Certificate in Information Technology</h4>
               <p><em>University of Auckland, New Zealand</em>
-                </p>
-                  <h5>2021 &nbsp;&nbsp;&nbsp;&nbsp; GPA 9/9</h5>
+              </p>
+              <h5>2021 &nbsp;&nbsp;&nbsp;&nbsp; GPA 9/9</h5>
             </div>
             <div class="resume-item">
               <h4>Master of Science in Microbiology</h4>
@@ -332,54 +365,128 @@
           </p>
         </div>
         <div class="row skills-content justify-content-start">
-          <div class="col">
+          <div class="col skill-icon-container">
             <img class="skill-icons" src="assets/img/skills/java.png" alt="java">
+            <div class="icon-text">
+              <div class="text">Java</div>
+            </div>
           </div>
-          <div class="col">
+          <div class="col skill-icon-container">
             <img class="skill-icons" src="assets/img/skills/csharp.png" alt="C sharp">
+            <div class="icon-text">
+              <div class="text">C Sharp</div>
+            </div>
           </div>
-          <div class="col">
+          <div class="col skill-icon-container">
             <img class="skill-icons" src="assets/img/skills/html.png" alt="html">
+            <div class="icon-text">
+              <div class="text">HTML</div>
+            </div>
           </div>
-          <div class="col">
+          <div class="col skill-icon-container">
             <img class="skill-icons" src="assets/img/skills/css.png" alt="css">
+            <div class="icon-text">
+              <div class="text">CSS</div>
+            </div>
           </div>
-          <div class="col">
+          <div class="col skill-icon-container">
             <img class="skill-icons" src="assets/img/skills/js.png" alt="js">
+            <div class="icon-text">
+              <div class="text">JavaScript</div>
+            </div>
           </div>
-          <div class="col">
+          <div class="col skill-icon-container">
             <img class="skill-icons" src="assets/img/skills/node.png" alt="node">
+            <div class="icon-text">
+              <div class="text">Node.js</div>
+            </div>
           </div>
-          <div class="col">
+          <div class="col skill-icon-container">
+            <img class="skill-icons" src="assets/img/skills/react.png" alt="react">
+            <div class="icon-text">
+              <div class="text">React</div>
+            </div>
+          </div>
+          <div class="col skill-icon-container">
+            <img class="skill-icons" src="assets/img/skills/typescript.png" alt="typescript">
+            <div class="icon-text">
+              <div class="text">TypeScript</div>
+            </div>
+          </div>
+          <div class="col skill-icon-container">
+            <img class="skill-icons" src="assets/img/skills/styled-components.png" alt="styled-components">
+            <div class="icon-text">
+              <div class="text">styled-components</div>
+            </div>
+          </div>
+          <div class="col skill-icon-container">
+            <img class="skill-icons" src="assets/img/skills/graphql.png" alt="graphql">
+            <div class="icon-text">
+              <div class="text">GraphQL</div>
+            </div>
+          </div>
+          <div class="col skill-icon-container">
+            <img class="skill-icons" src="assets/img/skills/apollo.png" alt="apollo">
+            <div class="icon-text">
+              <div class="text">Apollo Client</div>
+            </div>
+          </div>
+          <div class="col skill-icon-container">
+            <img class="skill-icons" src="assets/img/skills/jwt.png" alt="jwt">
+            <div class="icon-text">
+              <div class="text">JSON Web Token (JWT)</div>
+            </div>
+          </div>
+          <div class="col skill-icon-container">
             <img class="skill-icons" src="assets/img/skills/mongodb.png" alt="mongodb">
+            <div class="icon-text">
+              <div class="text">MongoDB</div>
+            </div>
           </div>
-          <div class="col">
+          <div class="col skill-icon-container">
             <img class="skill-icons" src="assets/img/skills/sqlite.png" alt="sqlite">
+            <div class="icon-text">
+              <div class="text">SQLite</div>
+            </div>
           </div>
-          <div class="col">
+          <div class="col skill-icon-container">
             <img class="skill-icons" src="assets/img/skills/tailwind.png" alt="tailwind">
+            <div class="icon-text">
+              <div class="text">Tailwind CSS</div>
+            </div>
           </div>
-          <div class="col">
+          <div class="col skill-icon-container">
             <img class="skill-icons" src="assets/img/skills/python.png" alt="python">
+            <div class="icon-text">
+              <div class="text">Python</div>
+            </div>
           </div>
-          <div class="col">
+          <div class="col skill-icon-container">
             <img class="skill-icons" src="assets/img/skills/git.png" alt="git">
+            <div class="icon-text">
+              <div class="text">Git</div>
+            </div>
           </div>
-          <div class="col">
+          <div class="col skill-icon-container">
             <img class="skill-icons" src="assets/img/skills/docker.png" alt="docker">
+            <div class="icon-text">
+              <div class="text">Docker</div>
+            </div>
           </div>
-          <div class="col">
+          <div class="col skill-icon-container">
             <img class="skill-icons" src="assets/img/skills/azure.png" alt="azure">
+            <div class="icon-text">
+              <div class="text">Azure</div>
+            </div>
           </div>
-          <div class="col">
+          <div class="col skill-icon-container">
             <img class="skill-icons" src="assets/img/skills/npm.png" alt="npm">
+            <div class="icon-text">
+              <div class="text">npm</div>
+            </div>
           </div>
         </div>
     </section><!-- End Skills Section -->
-
-
-
-
 
 
 
