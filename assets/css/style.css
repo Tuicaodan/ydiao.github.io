@@ -552,6 +552,7 @@ section {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+  width: 135px;
 }
 
 .skill-icon-container:hover .skill-icons{
