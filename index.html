@@ -74,12 +74,15 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title description-block">
-          <h2>About</h2>
-          <p>I am a scientist who has achieved at an advanced level in microbiology. Now I am pursuing a new career
-            pathway as a software developer.
-            I think the criterion of being a good developer does not decide by the number of languages or frameworks. I
-            believe the key to being a good developer is understanding the logic behind programming and having a great
-            passion for it.</p>
+          <h2>About Me</h2>
+          <p>I am a full stack developer who is passionate about coding and learning. I care deeply about the code I
+            write and the effect my work has on the product. I love learning and want to become the best developer I can
+            be.</p>
+          <p>Before I discovered my obsession with coding, I worked as a microbiologist for more than 6 years in both
+            industrial and academic areas. I really appreciate these years of experience working as a scientist. The
+            experience sharpened my capabilities which are critically desired for a good developer: strong attention to
+            detail; love of learning; analytical mindset; strong problem-solving ability and, most importantly,
+            curiosity and inquisitiveness.</p>
         </div>
 
         <div class="code-block">
@@ -87,22 +90,32 @@
           <span>public class</span> AboutMe {
   	
             <span>static</span> Person <span class="IJ-pr">i</span> = <span>new</span> Person(<span class="IJ-gr">"Yiwei"</span>)
-            <span>static</span> List<Skill> <span class="IJ-pr">currentSkills</span> = Arrays.asList(Java<span>,</span> HTML<span>,</span> CSS<span>,</span> JavaScript<span>,</span> Node.js<span>              
-             </span> React.js<span>,</span> styled-components<span>,</span> Tailwind CSS<span>,</span> GraphQL<span>,</span> DataLoader<span>,</span> Apollo Client<span>,</span>
-              SQL<span>,</span> MongoDB<span>,</span> REST APIs<span>,</span> Python<span>,</span> Git<span>,</span> Docker<span>,</span> Azure)<span>;</span>
+            <span>static</span> List<Skill> <span class="IJ-pr">currentSkills</span> = Arrays.asList(Java<span>,</span> HTML<span>,</span> CSS<span>,</span> JavaScript<span>,</span> Node.js            
+            TypeScript<span>,</span> React.js<span>,</span> Redux<span>,</span> styled-components<span>,</span> Tailwind CSS<span>,</span> GraphQL<span>,</span> Jest<span>,</span> 
+            Cypress<span>,</span> SQL<span>,</span> MongoDB<span>,</span> REST APIs<span>,</span> Python<span>,</span> Git<span>,</span> Docker<span>,</span> Azure)<span>;</span>
             
             <span>public static void</span> main(String args[]) {
-              JobThread currentThread1 = <span>new</span> JobThread()<span>;</span>
-              currentThread1.start()<span>;</span>
+              LifelongThread lifelong = <span>new</span> LifelongThread()<span>;</span>
+              lifelong.start()<span>;</span>
                 
-              SkillThread currentThread2 = <span>new</span> SkillThread(targetLevel)<span>;</span>
-              currentThread2.start()<span>;</span>
+              SkillThread currentThread1 = <span>new</span> SkillThread(targetLevel)<span>;</span>
+              currentThread1.start()<span>;</span>
             }
             
-            <span>class</span> JobThread <span>extends</span> Thread {	
+            <span>class</span> LifelongThread <span>extends</span> Thread {	
               <span>public void</span> run(){
-                <span>while</span>(!(<span class="IJ-pr">i</span>.getCurrentRole() <span>instanceof</span> Developer)){
-                  <span class="IJ-pr">i</span>.keepLooking()<span>;</span>
+                <span>while</span>(<span class="IJ-pr">i</span>.isAlive()){
+                  <span>int</span> currentAchievement = <span class="IJ-pr">i</span>.getAchieved()<span>;</span>
+                  <span>int</span> currentExpectation = <span class="IJ-pr">i</span>.getExpected()<span>;</span>
+                  <span>if</span>(currentAchievement >= currentExpectation){
+                    <span>int</span> newExpectation = currentExpectation + currentExpectation <span>*</span> 0.618<span>;</span>
+                    <span class="IJ-pr">i</span>.setExpected(newExpectation)<span>;</span>
+                  }
+                  <span>else</span>{
+                    <span>int</span> currenAnxiety = <span class="IJ-pr">i</span>.getAnxiety()<span>;</span>
+                    <span>int</span> newAnxiety = currenAnxiety + currenAnxiety <span>*</span> 0.618<span>;</span>
+                    <span class="IJ-pr">i</span>.setAnxiety(newAnxiety)<span>;</span>
+                  }
                 }
               }
             }
@@ -138,9 +151,7 @@
           <h2>Projects</h2>
           <p>Here are the projects I have done. Most of the projects are full-stack projects. Alongside my progress in
             learning new skills, I always apply the new skills in the new projects.
-            Now I'm working on two ongoing projects. One of the projects is to use React and MongoDB to write a job
-            searching database. Another project is using Java and Java Swing to write the classic bulls and cows
-            guessing game. Please check back later for the upcoming project.</p>
+            Now I'm working on project. The projects is to use serverless function as back end and add Redis for better performance. The front end is written using React/TypeScript. Also add Material UI and Storybook for better code maintainability.</p>
         </div>
 
         <div class="row">
@@ -154,6 +165,34 @@
         </div>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/youtagram-client/logo-client.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Youtagram</h4>
+                <p>A YouTube version of Instagram</p>
+                <div class="portfolio-links">
+                  <a href="portfolio-youtagram.html" class="portfolio-details-lightbox" data-glightbox="type: external"
+                    title="App Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/youtagram-server/logo-server.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Youtagram: server</h4>
+                <p>A GraphQL API Endpoint for the Youtagram app</p>
+                <div class="portfolio-links">
+                  <a href="portfolio-youtagram-api.html" class="portfolio-details-lightbox"
+                    data-glightbox="type: external" title="App Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
@@ -211,34 +250,6 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/youtagram-server/logo-server.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Youtagram: server</h4>
-                <p>A GraphQL API Endpoint for the Youtagram app</p>
-                <div class="portfolio-links">
-                  <a href="portfolio-youtagram-api.html" class="portfolio-details-lightbox"
-                    data-glightbox="type: external" title="App Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/youtagram-client/logo-client.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Youtagram</h4>
-                <p>A YouTube version of Instagram</p>
-                <div class="portfolio-links">
-                  <a href="portfolio-youtagram.html" class="portfolio-details-lightbox" data-glightbox="type: external"
-                    title="App Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
 
         </div>
 
@@ -260,12 +271,7 @@
                 </path>
               </svg></a></h2>
 
-          <p>An astute, accomplished and intelligent professional who has achieved at an advanced level in Microbiology,
-            now pursuing a new career pathway as a Software Developer. Possesses fundamental skills and foundational
-            knowledge in software development, web technologies and databases. Able to leverage advanced level training,
-            skills and experience in the field of science and translate these capabilities into the software development
-            field. Offers a proven ability to grasp complex concepts and to methodically and logically resolve problems.
-          </p>
+          <p>Full stack developer passionate about coding and learning. Seeking for a full stack developer position. Looking for growth opportunities to learn new technologies and grow my technical skill set. Offering a proven ability to grasp complex concepts and to methodically and logically resolve problems gained from years of scientific field experience.          </p>
         </div>
 
         <div class="row">
@@ -275,15 +281,26 @@
               <h4>Yiwei Diao</h4>
               <ul>
                 <li>Auckland, New Zealand</li>
-                <li>diaoyiwei@gmail.com</li>
+                <li>tuicaodanad@gmail.com</li>
               </ul>
             </div>
-
 
             <h3 class="resume-title">Professional Experience</h3>
             <div class="resume-item">
               <h4>Research Technician</h4>
-              <h5>Feb 2018 - Present</h5>
+              <h5>Oct 2021 - Present</h5>
+              <p><em>MediaWorks , Auckland, New Zealand </em></p>
+              <ul>
+                <li>Create new components for Adobe Experience Manager with Java and JavaScript for radio website enhancement.</li>
+                <li>Develop and implement radio stations voting and countdown servive widgets with HTML, CSS, JavaScript and Node.js.</li>
+                <li>Write REST API for web services.</li>
+                <li>Create and deploy two internal tools with React, TypeScript and Node.js to make the end-to-end creation of the website widgets automated. Reduce 90% of the Business-as-usual time.</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>Research Technician</h4>
+              <h5>Feb 2018 - Oce 2021</h5>
               <p><em>University of Auckland, Auckland, New Zealand </em></p>
               <ul>
                 <li>Academic literature research</li>
@@ -297,7 +314,10 @@
               </ul>
             </div>
 
-            <div class="resume-item">
+
+          </div>
+          <div class="col-lg-6">
+            <div class="resume-item mt-5">
               <h4>Molecular Scientist</h4>
               <h5>Apr 2015 - Nov 2017</h5>
               <p><em>Pace Analytical Energy Services LLC, Pittsburgh, Pennsylvania, USA </em></p>
@@ -305,13 +325,6 @@
                 <li>Carried out and managed laboratory testing plans and procedures, and maintained accurate logbooks of
                   all procedures</li>
                 <li>Operated, maintained, calibrated and debugged laboratory equipment and software systems</li>
-              </ul>
-            </div>
-
-          </div>
-          <div class="col-lg-6">
-            <div class="resume-item mt-5">
-              <ul>
                 <li>Independent responsible for lab equipment and supply purchasing</li>
                 <li>Ensured the laboratory was effectively sanitised and correct level of stock maintained</li>
               </ul>
@@ -406,6 +419,12 @@
             </div>
           </div>
           <div class="col skill-icon-container">
+            <img class="skill-icons" src="assets/img/skills/redux.png" alt="react">
+            <div class="icon-text">
+              <div class="text">Redux</div>
+            </div>
+          </div>
+          <div class="col skill-icon-container">
             <img class="skill-icons" src="assets/img/skills/typescript.png" alt="typescript">
             <div class="icon-text">
               <div class="text">TypeScript</div>
@@ -451,6 +470,18 @@
             <img class="skill-icons" src="assets/img/skills/tailwind.png" alt="tailwind">
             <div class="icon-text">
               <div class="text">Tailwind CSS</div>
+            </div>
+          </div>
+          <div class="col skill-icon-container">
+            <img class="skill-icons" src="assets/img/skills/jest.png" alt="jest">
+            <div class="icon-text">
+              <div class="text">Jest</div>
+            </div>
+          </div>
+          <div class="col skill-icon-container">
+            <img class="skill-icons" src="assets/img/skills/cypress.png" alt="cypress">
+            <div class="icon-text">
+              <div class="text">Cypress</div>
             </div>
           </div>
           <div class="col skill-icon-container">
